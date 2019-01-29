@@ -1,0 +1,14 @@
+body {
+    background: yellow;
+  }
+  p {
+    color: #000000;  
+  }
+  h1{
+    color: #ff0000;
+  }
+  
+  #blue-header{
+    color: blue;
+  }
+  

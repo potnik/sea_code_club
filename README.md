@@ -15,8 +15,8 @@
 
 ### Weekly Updates
 
-[Week 1 - Welcome and Intro to HTML](./week1.md)  
-[Week 2 - HTML & CSS](./week2.md)  
-[Week 3 - More fun with HTML & CSS](./week3.md)  
-[Week 4 - Intro to Python](./week4.md)
+[Week 1 - Welcome and Intro to HTML](./weeks/week1.md)  
+[Week 2 - HTML & CSS](./weeks/week2.md)  
+[Week 3 - More fun with HTML & CSS](./weeks/week3.md)  
+[Week 4 - Intro to Python](./weeks/week4.md)
 

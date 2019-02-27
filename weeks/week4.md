@@ -9,7 +9,7 @@ While there a lots of resources available for Python 2 (2.7), everything we will
 We worked together on this project:
 [Turtle Race](https://projects.raspberrypi.org/en/projects/turtle-race) Using this [Trinket](http://jumpto.cc/python-new) 
 
-![Turtle Race](./images/race-more.png)
+![Turtle Race](../images/race-more.png)
 
 ```python
 #!/bin/python3

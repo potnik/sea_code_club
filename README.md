@@ -1,6 +1,6 @@
 # Sea Code Club
 
- ![Code Club](./images/codeclublogo.png)
+<img src = "./images/codeclublogo.png" width="400"/>
 
 ## Notes and Code for Code Club at School of Engineering and Arts
 

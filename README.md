@@ -19,4 +19,5 @@
 * [Week 2 - HTML & CSS](./weeks/week2.md)  
 * [Week 3 - More fun with HTML & CSS](./weeks/week3.md)  
 * [Week 4 - Intro to Python](./weeks/week4.md)
+* [Week 5 - More Python, More Turtles](./weeks/week5.md)
 

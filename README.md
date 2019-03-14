@@ -20,4 +20,4 @@
 * [Week 3 - More fun with HTML & CSS](./weeks/week3.md)  
 * [Week 4 - Intro to Python](./weeks/week4.md)
 * [Week 5 - More Python, More Turtles](./weeks/week5.md)
-
+* [Week 6 - Rock, Paper, Scissors](./weeks/week6.md)

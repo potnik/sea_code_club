@@ -1,4 +1,4 @@
-# Sea Code Club
+# SEA Code Club
 
 <img src = "./images/codeclublogo.png" width="400"/>
 

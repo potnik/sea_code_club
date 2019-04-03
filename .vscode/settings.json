@@ -8,7 +8,7 @@
         "penup",
         "randint"
     ],
-    "python.pythonPath": "/usr/bin/python3.7",
+    "python.pythonPath": "C:\\Users\\Tom\\AppData\\Local\\Programs\\Python\\Python36-32\\python.exe",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true
 }

@@ -1,4 +1,4 @@
-# Week 1
+# Week 1 - Welcome to Code Club
 Thanks for coming to our first Code Club meeting.  I started Code Club to give students a chance to move beyond Scratch and other graphical coding environments.  In Code Club, you will be typing code -- so much typing...
 
 This week we got set up with our Trinket.io accounts and started to look at basic HTML tags.  You were given an HTML Cheatsheet as a shortcut to learning the different tags.  If you lost yours, or want an electronic copy, you can find it and other resources in the Code Club Files folder.  Find the link to this in the group welcome message.

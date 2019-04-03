@@ -7,7 +7,8 @@ import time
 
 astros_url = 'http://api.open-notify.org/astros.json'
 iss_now_url = 'http://api.open-notify.org/iss-now.json'
-iss_pass_url = 'http://api.open-notify.org/iss-pass.json?lat=45&lon=-93.3'
+iss_pass_url = 'http://api.open-notify.org/iss-pass.json'
+style = ('Arial', 12, 'bold')
 
 def api_call(url):
     response = urllib.request.urlopen(url)
@@ -33,13 +34,13 @@ long = float(location['longitude'])
 screen = turtle.Screen()
 screen.setup(720, 360)
 screen.setworldcoordinates(-180, -90, 180, 90)
-screen.bgpic('../../images/map.gif')
-screen.register_shape('../../images/space-station.gif')
+screen.bgpic('./images/map.gif')
+screen.register_shape('./images/space-station.gif')
 
 #ISS
 iss = turtle.Turtle()
 iss.speed(0)
-iss.shape('../../images/space-station.gif')
+iss.shape('./images/space-station.gif')
 iss.penup()
 iss.pencolor('yellow')
 iss.goto(long, lat)
@@ -56,7 +57,7 @@ home.goto(home_long, home_lat)
 home.pendown()
 home.dot(5)
 
-result = api_call(iss_pass_url)
+result = api_call(iss_pass_url + '?lat=' + str(home_lat) + '&lon=' + str(home_long))
 over = result['response'][1]['risetime']
 style = ('Arial', 4, 'bold')
 home.write(time.ctime(over), font=style)
@@ -66,10 +67,18 @@ i=1
 while True:
   result = api_call(iss_now_url)
   location = result['iss_position']
+  # store the previous longitude for use in if statement
+  old_long = long
   lat = float(location['latitude'])
   long = float(location['longitude'])
-  iss.goto(long, lat)
+  # this if checks to see if the iss has reached the right edge
+  # of the map and lifts the pen so it can move to the other side
+  if old_long > long:
+    iss.penup()
+    iss.goto(long, lat)
+    iss.pendown()
+  else:
+    iss.goto(long, lat)
   print(i, time.ctime(), 'latitude: ', lat, ' longitude: ', long )
   time.sleep(60)
   i=i+1
-  

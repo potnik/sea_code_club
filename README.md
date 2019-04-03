@@ -1,7 +1,6 @@
 # Sea Code Club
 
-<img src = "./images/
-.png" width="400"/>
+<img src = "./images/codeclublogo.png" width="400"/>
 
 ## Notes and Code for Code Club at School of Engineering and Arts
 
@@ -23,3 +22,4 @@
 * [Week 5 - More Python, More Turtles](./weeks/week5.md)
 * [Week 6 - Rock, Paper, Scissors](./weeks/week6.md)
 * [Week 7 - Color Chooser](./weeks/week7.md)
+* [Week 8 - ISS Tracker](./weeks/week8.md)

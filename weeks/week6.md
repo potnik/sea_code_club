@@ -1,4 +1,4 @@
-# Rock, Paper, Scissors
+# Week 6 - Rock, Paper, Scissors
 
 This week, we created a simple game of Rock, Paper, Scissors.  This lesson re-visited some concepts we worked with in our Turtle race project. We'll cover more of this in depth during week 6.
 

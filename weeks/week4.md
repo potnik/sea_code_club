@@ -1,4 +1,4 @@
-# Intro to Python #
+# Week 4 - Intro to Python #
 
 This week we started looking at Python as a programming language.  Unlike HTML/CSS which are  markup languages (and for many people, not true programming), Python is a full powered and popular development language.
 

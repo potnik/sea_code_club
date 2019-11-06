@@ -1,6 +1,6 @@
 <img src = "./images/SEA.png">
 
-## Notes and Code for Code Club at School of Engineering and Arts
+## Notes and Code for Code Club at School of Engineering and Arts Fall 2019
 
 <img src = "./images/codeclublogo.png" width="200"/> 
 
@@ -9,7 +9,6 @@
 * [Trinket.io](https://trinket.io) - the online code editor we used in all of our projects
 * [Code Club Projects](https://projects.raspberrypi.org/en/codeclub?utm_source=code-club-projects-site) - The official Code Club project site. All the projects we did plus more
 * [Code Club Docs](https://drive.google.com/drive/folders/10xL0Nd-Lq8ghj1qSG4T40s97sVIBI_Tb) - the cheatsheets I shared with you along with other documents
-* [W3Schools - HTML&CSS Resources](https://www.w3schools.com/)
 * [HTML Colors](https://www.w3schools.com/colors/colors_names.asp) - an online color picker
 * [Python Home](https://www.python.org/) - everything you need to get started with Python on any platform
 
@@ -22,13 +21,4 @@
 
 ### Weekly Updates
 
-* [Week 1 - Welcome and Intro to HTML](./weeks/week1.md)  
-* [Week 2 - HTML & CSS](./weeks/week2.md)  
-* [Week 3 - More fun with HTML & CSS](./weeks/week3.md)  
-* [Week 4 - Intro to Python](./weeks/week4.md)
-* [Week 5 - More Python, More Turtles](./weeks/week5.md)
-* [Week 6 - Rock, Paper, Scissors](./weeks/week6.md)
-* [Week 7 - Color Chooser](./weeks/week7.md)
-* [Week 8 - ISS Tracker](./weeks/week8.md)
-* [Week 9 - Python Console and Code Craft](./weeks/week9.md)
-* [Week 10 - Coding with Hardware, Review and Resources](./weeks/week10.md)
+* [Week 1 - Welcome and Intro to Python](./weeks/week1.md)

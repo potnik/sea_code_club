@@ -75,6 +75,32 @@ for turn in range(110):
     s_score = s_score + s
     j_score = j_score + j
 
+winner = Turtle()
+
+winner.penup()
+winner.goto(-140, -50)
+winner.pendown()
+winner.shape('turtle')
+
+if a > b:
+    if a > j:
+        if a > s:
+            winner.color('red')
+            winner.write('Ada Wins!', font=('Arial', 18, 'normal'))
+elif b > j:
+    if b > s:
+        winner.color('blue')
+        winner.write('Bob Wins!', font=('Arial', 18, 'normal'))
+elif j > s:
+    winner.color('orange')
+    winner.write('Joe Wins!', font=('Arial', 18, 'normal'))
+else:
+    winner.color('purple')
+    winner.write('Sue Wins!', font=('Arial', 18, 'normal'))
+
+winner.penup()
+winner.goto(-140, -100)
+
 print('Scores')
 print('---------------------')
 print('ada: ' + str(a_score))

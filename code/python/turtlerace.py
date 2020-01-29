@@ -5,6 +5,26 @@ from turtle import speed, penup, goto, write, \
 from random import randint
 import time
 
+
+def bubbleSort(alist):
+
+    # Setting the range for comparison (first round: n, second round: n-1  and so on)
+    for i in range(len(alist)-1, 0, -1):
+
+        # Comparing within set range
+        for j in range(i):
+
+            # Comparing element with its right side neighbor
+            if alist[j] > alist[j+1]:
+
+                # swapping
+                temp = alist[j]
+                alist[j] = alist[j+1]
+                alist[j+1] = temp
+
+    return alist
+
+
 speed(0)
 penup()
 goto(-140, 140)
@@ -75,23 +95,25 @@ for turn in range(110):
     s_score = s_score + s
     j_score = j_score + j
 
+scores = [a_score, b_score, j_score, s_score]
+
+winscore = bubbleSort(scores)
+print(winscore)
+
 winner = Turtle()
 
 winner.penup()
-winner.goto(-140, -50)
+winner.goto(-140, -60)
 winner.pendown()
 winner.shape('turtle')
 
-if a > b:
-    if a > j:
-        if a > s:
-            winner.color('red')
-            winner.write('Ada Wins!', font=('Arial', 18, 'normal'))
-elif b > j:
-    if b > s:
-        winner.color('blue')
-        winner.write('Bob Wins!', font=('Arial', 18, 'normal'))
-elif j > s:
+if a_score == scores[3]:
+    winner.color('red')
+    winner.write('Ada Wins!', font=('Arial', 18, 'normal'))
+elif b_score == scores[3]:
+    winner.color('blue')
+    winner.write('Bob Wins!', font=('Arial', 18, 'normal'))
+elif j_score == scores[3]:
     winner.color('orange')
     winner.write('Joe Wins!', font=('Arial', 18, 'normal'))
 else:
@@ -99,7 +121,7 @@ else:
     winner.write('Sue Wins!', font=('Arial', 18, 'normal'))
 
 winner.penup()
-winner.goto(-140, -100)
+winner.goto(0, -50)
 
 print('Scores')
 print('---------------------')

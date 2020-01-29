@@ -22,3 +22,4 @@
 ### Weekly Updates
 
 * [Week 1 - Welcome and Intro to Python](./weeks/week1.md)
+* [Week 2 - Intro to Turtle](./weeks/week2.md)

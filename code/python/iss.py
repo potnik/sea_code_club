@@ -15,7 +15,7 @@ print('People in Space: ', result['number'])
 people = result['people']
 
 for p in people:
-  print(p['name'], ' in ', p['craft'])
+    print(p['name'], ' in ', p['craft'])
 
 
 url = 'http://api.open-notify.org/iss-now.json'
@@ -31,21 +31,21 @@ print('Longitude: ', lon)
 screen = turtle.Screen()
 screen.setup(720, 360)
 screen.setworldcoordinates(-180, -90, 180, 90)
-screen.register_shape('../../images/iss.gif')
+screen.register_shape('../images/iss.gif')
 
-# image source: 
+# image source:
 # map.jpg: http://visibleearth.nasa.gov/view.php?id=57752 Credit: NASA
-screen.bgpic('../../images/map.gif')
+screen.bgpic('../images/map.gif')
 
 iss = turtle.Turtle()
-iss.shape('../../images/iss.gif')
-iss.setheading(90)  
+iss.shape('../images/iss.gif')
+iss.setheading(90)
 iss.penup()
 
 iss.goto(lon, lat)
 
 # When Does ISS next pass over me?
-#london
+# london
 #lat = 51.5072
 #lon = 0.1275
 
@@ -60,14 +60,15 @@ lon = -95.097
 location = turtle.Turtle()
 location.penup()
 location.color('yellow')
-location.goto(lon,lat)
+location.goto(lon, lat)
 location.dot(5)
 location.hideturtle()
 
-url = 'http://api.open-notify.org/iss-pass.json?lat=' + str(lat) + '&lon=' + str(lon)
+url = 'http://api.open-notify.org/iss-pass.json?lat=' + \
+    str(lat) + '&lon=' + str(lon)
 response = urllib.request.urlopen(url)
 result = json.loads(response.read())
 
-#print result
+# print result
 over = result['response'][1]['risetime']
 location.write(time.ctime(over))
